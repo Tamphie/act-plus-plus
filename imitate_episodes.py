@@ -229,6 +229,7 @@ def get_image(ts, camera_names, rand_crop_resize=False):
     return curr_image
 
 
+
 def eval_bc(config, ckpt_name, save_episode=True, num_rollouts=50):
     set_seed(1000)
     ckpt_dir = config['ckpt_dir']

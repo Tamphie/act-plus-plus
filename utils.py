@@ -272,7 +272,7 @@ def BatchSampler(batch_size, episode_len_l, sample_weights):
 #     return train_dataloader, val_dataloader, norm_stats, train_dataset.is_sim
 
 def load_data(batch_size_train, batch_size_val, task):
-    demo_dir = f"core/env/expert_demo/{task}"
+    demo_dir = f"/home/tianrun/data/fetch_data/{task}"
     print("loading data...", demo_dir)
     train_dataset = FetchRobotDataset(demo_dir=demo_dir, is_train=True, k=100, traj_len=360)
     val_dataset = FetchRobotDataset(demo_dir=demo_dir, is_train=False, k=100, traj_len=360)
